@@ -139,6 +139,21 @@
         .project-card:hover::before {
             left: 100%;
         }
+        
+        /* Profile Picture Styling */
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -186,10 +201,9 @@
     <section id="home" class="min-h-screen flex items-center justify-center pt-16" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div class="text-center text-white" data-aos="fade-up">
+                <!-- Profile Picture -->
                 <div class="float-animation inline-block mb-6">
-                    <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-lg">
-                        <i data-feather="cloud" class="w-12 h-12 text-white"></i>
-                    </div>
+                    <img src="vinay.jpg" alt="Vinay S" class="profile-pic mx-auto">
                 </div>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
                     Hi, I'm <span class="text-yellow-300">Vinay S</span>
@@ -220,8 +234,7 @@
             </h2>
             <div class="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-8 shadow-xl border border-purple-100" data-aos="fade-up" data-aos-delay="100">
                 <p class="text-lg text-gray-700 leading-relaxed text-center">
-                    Cloud Infrastructure Engineer with hands-on experience in AWS and multi-cloud environments. 
-                    Skilled in Ubuntu server management, VPN configuration, firewall rules, and troubleshooting server & network issues. Currently managing cloud projects for Rajasthan and Tripura State Electricity Board websites. Completed B-Tech in CSE (AIML) from Reva University (2025).
+                    Cloud Infrastructure Engineer with hands-on experience in AWS and multi-cloud environments. Skilled in Ubuntu server management, VPN configuration, firewall rules, and troubleshooting server & network issues. Currently managing cloud projects for Rajasthan and Tripura State Electricity Board websites. Completed B-Tech in CSE (AIML) from Reva University (2025).
                 </p>
             </div>
         </div>
